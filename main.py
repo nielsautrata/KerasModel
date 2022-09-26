@@ -1,5 +1,4 @@
-# TensorFlow and tf.keras
-
+# TensorFlow Keras
 import tensorflow as tf
 from tensorflow import keras
 from keras import layers, activations
@@ -21,7 +20,6 @@ test_images = test_images.reshape(test_images.shape[0], 28, 28, 1)
 # adjust dynamic parameter for testing
 
 # activation function: activations.sigmoid, activations.softmax etc.
-# https://keras.io/api/layers/activations/
 fnActivation = activations.relu
 
 # epochs
@@ -33,7 +31,6 @@ lr = 0.0001
 # kernel size - weights
 
 model = tf.keras.Sequential()
-
 Conv2D = layers.Conv2D
 BatchNormalization = layers.BatchNormalization
 
